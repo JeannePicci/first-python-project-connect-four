@@ -139,5 +139,17 @@ def Transformateur (event):#fonction qui va permettre d'assigner à un clique un
 
 ca.bind("<Button-1>", Transformateur)
 
+# bouton pour quitter le jeu
+bouton_quitter = tkinter.Button(
+    root,
+    text="X Quitter",
+    command=root.destroy,
+    font=("Arial", 12),
+    bg="red",
+    fg="white"
+)
+
+bouton_quitter.pack()
+bouton_quitter.place(x=720, y=10)
 
 root.mainloop ()  # on affiche enfin la fenêtre principale
